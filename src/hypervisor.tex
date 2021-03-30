@@ -2440,6 +2440,8 @@ or store, not for the original access type.
 However, any exception is always reported for the original access type
 (instruction, load, or store/AMO).
 
+VS-stage permissions are checked before the final VS-stage guest physical address is translated into a supervisor physical address.
+
 The G~bit in all G-stage PTEs is reserved for future standard use, should be cleared
 by software for forward compatibility, and must be ignored by hardware.
 
